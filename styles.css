@@ -1,0 +1,29 @@
+*, ::before, ::after
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+img{
+    width: 100%;
+}
+
+/* HEADER */
+
+.mobile-header{
+    height: 64px;
+}
+
+.mobile-header img{
+    height: 50%;
+}
+
+
+
