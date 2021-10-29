@@ -5,17 +5,97 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Open Sans', sans-serif;
+  
+}
+
+/* General */
+
+h1{ 
+    font-weight: 500;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+li{
+    list-style: none;
+}
+
+.light{
+    font-weight: 300;
+}
+
+/* Colors */
+
+.grey{
+    color: #9f9f9f;
+}
+
+.midgrey{
+    color: #6c6d6d;
+}
+
+.darkgrey{
+    color: #4a4a4a;
+}
+
+.blue{
+   color: #5496e3; 
+}
+
+.bg-light{
+    background-color: #d8d8d8;
+}
+
+.bg-dark{
+    background-color: #4a4a4a;
+}
+
+
+/* Positionning */
+
+.container{
+    max-width: 1600px;
+    margin: auto;
+}
+
 .flex-container{
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-img{
-    width: 100%;
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+
+
 /* HEADER */
+
+/* Mobile design */
 
 .mobile-header{
     height: 64px;
@@ -25,5 +105,122 @@ img{
     height: 50%;
 }
 
+/* Laptop design */
+
+.laptop-header{
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.laptop-header img{
+    height: 48px;
+    margin-right: 4px;
+}
+
+h1{ 
+    font-weight: 500;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.left-heading{
+    height: 64px;
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+}
+
+.right-header li{
+    margin-left: 16px;
+}
+
+.right-header{
+    margin-right: 24px;
+}
+
+/* Section learning */
+
+.box {
+   padding: 32px 16px;
+}
+
+#learning p {
+    font-size: 1.2rem;
+    padding: 32px 0 24px;
+}
+
+#learning button{
+    width: 100%;
+    color: #f1f1f1;
+    padding: 8px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+.banner2{
+    display: none;
+}
+
+.activities{
+    padding: 16px 16px 32px;
+    margin: 0 auto;
+}
+
+.activities-txt{
+    padding: 16px;
+}
+
+.activities-txt h3{
+    padding-bottom: 10px;
+}
+
+.activities-txt p{
+    padding: 0 0 6px;
+}
+
+.activities-txt a{
+    font-size: 13px;
+}
+/* Header Media queries */
+
+@media screen and (max-width: 767px){
+    .laptop-header{
+        display: none;
+    }
+}
+
+/* Banner et section learning */
+
+@media screen and (min-width: 768px){
+    .mobile-header{
+        display: none;
+    }
+
+    .box-laptop{
+        width: 100%;
+        display: flex;
+        align-items: center; 
+        padding: 32px 24px;
+    }
+    
+    .banner{
+       flex-basis: 60%;
+    }
+
+    #learning{   
+        padding-left: 24px ;
+        flex-basis: 40%;
+    }
+
+    .banner2{
+        display: block;
+    }
+    .activities{
+        flex-basis: 40%;
+    }
+}
 
 
