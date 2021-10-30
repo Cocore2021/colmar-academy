@@ -6,7 +6,7 @@
 }
 
 body{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
   
 }
 
@@ -48,7 +48,7 @@ li{
 /* Colors */
 
 .grey{
-    color: #9f9f9f;
+    color: #919191;
 }
 
 .midgrey{
@@ -56,7 +56,7 @@ li{
 }
 
 .darkgrey{
-    color: #4a4a4a;
+    color: #353535;
 }
 
 .blue{
@@ -91,11 +91,21 @@ li{
     align-items: center;
 }
 
+.hiding-box{
+    display: none;
+}
 
+.d-flex-column-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-/* HEADER */
+.text-center{
+    text-align: center;
+}
 
-/* Mobile design */
+/* Header mobile design */
 
 .mobile-header{
     height: 64px;
@@ -105,7 +115,7 @@ li{
     height: 50%;
 }
 
-/* Laptop design */
+/* Header laptop design */
 
 .laptop-header{
     height: 64px;
@@ -116,12 +126,6 @@ li{
 .laptop-header img{
     height: 48px;
     margin-right: 4px;
-}
-
-h1{ 
-    font-weight: 500;
-    font-size: 32px;
-    text-transform: uppercase;
 }
 
 .left-heading{
@@ -160,12 +164,8 @@ h1{
     cursor: pointer;
 }
 
-.banner2{
-    display: none;
-}
-
 .activities{
-    padding: 16px 16px 32px;
+    padding: 16px 16px 16px;
     margin: 0 auto;
 }
 
@@ -184,6 +184,101 @@ h1{
 .activities-txt a{
     font-size: 13px;
 }
+
+/* Informations */
+
+.banner2 h2{
+   padding-top: 32px;
+}
+
+.txt-banner2{
+    padding-top: 24px;
+    font-weight: lighter;
+}
+
+.box-banner2{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.activities-laptop{
+    flex-basis: 40%;
+    margin-top: -16px;
+}
+
+
+.activities-block-laptop{
+    display: flex;
+    margin-left: 24px;
+}
+
+.activities-laptop img{
+    width: 35%;
+    align-self: center;
+    padding: 16px; 
+}
+
+/* Start learning Mobile */
+
+.start-learning-mobile h2{
+    margin-bottom: 16px;
+}
+
+.start-learning-mobile h3{
+    padding: 16px 16px ;
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.start-learning-mobile :last-child{
+    margin-bottom: 0;
+}
+
+/* Start learning laptop */
+
+.start-learning-laptop{
+    display: none;
+    padding: 32px;
+}
+
+.start-learning-laptop h2{
+    text-align: center;
+}
+
+.container-cards{
+    display: grid;
+    gap: 32px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    padding: 32px 72px 0;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+.card-block{
+    background-color: #fff;
+    box-shadow: 3px 2px 10px  #919191;
+}
+
+.card-block-content{
+    padding: 16px 16px 24px;
+}
+
+.card-block-content h4{
+    padding: 12px 0 8px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.card-block-content h3{
+    font-weight: 400;
+}
+
+
+
 /* Header Media queries */
 
 @media screen and (max-width: 767px){
@@ -195,14 +290,14 @@ h1{
 /* Banner et section learning */
 
 @media screen and (min-width: 768px){
-    .mobile-header{
+    .mobile-header, .start-learning-mobile{
         display: none;
     }
 
     .box-laptop{
         width: 100%;
         display: flex;
-        align-items: center; 
+        /* align-items: center;  */
         padding: 32px 24px;
     }
     
@@ -215,12 +310,43 @@ h1{
         flex-basis: 40%;
     }
 
-    .banner2{
+    .activities{
+        display: flex;
+    }
+
+    .activities-block{
+        margin: 15px;
+    } 
+
+    .start-learning-laptop{
         display: block;
     }
-    .activities{
-        flex-basis: 40%;
+
+}
+
+@media screen and (min-width: 960px){
+    .container-cards{
+        grid-template-columns: 1fr 1fr 1fr;
     }
+}
+
+@media screen and (min-width: 1200px){
+    .activities{
+        display: none;
+    }
+
+    .banner2{
+        display: block;
+        align-items: flex-start;
+    }
+
+    .box-laptop2{
+        width: 100%;
+        display: flex;
+        /* align-items: center;  */
+        padding: 32px 24px;
+    }
+    
 }
 
 

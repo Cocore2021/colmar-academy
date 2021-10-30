@@ -6,8 +6,10 @@
     <title>Colmar Academy</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -38,8 +40,10 @@
       </div>
     </header>
 
-    <div class="container">
-      <div class="box-laptop bg-light">
+    <!-- Section learning -->
+
+    <div class="bg-light">
+      <div class="box-laptop container">
         <section class="banner">
           <img class="banner-img" src="images/banner.jpg" alt="" />
         </section>
@@ -50,34 +54,178 @@
           <button class="start bg-dark">Start here</button>
         </section>
       </div>
-      <div class="box-laptop">
+    </div>
+
+    <!-- Block image2 Mobile -->
+
+    <section class="activities">
+      <div class="activities-block">
+        <img src="images/information-orientation-mobile.jpg" alt="" />
+        <div class="activities-txt">
+          <h3 class="darkgrey">Orientation date</h3>
+          <p class="midgrey">Tue 10/11 &#38; Wed 10/12: 8am-3pm</p>
+          <a href="#" class="blue">Read more</a>
+        </div>
+      </div>
+      <div class="activities-block">
+        <img src="images/information-campus-mobile.jpg" alt="" />
+        <div class="activities-txt">
+          <h3 class="darkgrey">Our campus</h3>
+          <p class="midgrey">Find which campus is close by you</p>
+          <a href="#" class="blue">Read more</a>
+        </div>
+      </div>
+      <div class="activities-block">
+        <img src="images/information-guest-lecture-mobile.jpg" alt="" />
+        <div class="activities-txt">
+          <h3 class="darkgrey">Special guest lecture</h3>
+          <p class="midgrey">
+            Join a keynote with Olivier Sack about music medical treatment
+          </p>
+          <a href="#" class="blue">Read more</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Block image2 laptop -->
+    <div class="container">
+      <div class="box-laptop2 hiding-box">
         <section class="banner banner2">
-          <img class="banner-img" src="images/information-main.jpg" alt="" />
+          <div class="box-banner2">
+            <div>
+              <img
+                class="banner-img"
+                src="images/information-main.jpg"
+                alt=""
+              />
+              <h2 class="darkgrey">It doesn't hurt to keep practicing</h2>
+              <p class="darkgrey txt-banner2">
+                "Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores nemo ea aliquam veniam quasi repellat. Placeat
+                obcaecati et cumque, sed reiciendis praesentium optio architecto
+                quo, sunt quidem inventore dolorem? Modi accusamus molestiae id
+                nam recusandae, placeat porro vel sed rem!"
+              </p>
+            </div>
+            <p class="darkgrey txt-banner2 citation">
+              Emanuel, Sr Strategist at hiring.com
+            </p>
+          </div>
         </section>
 
-        <section class="activities">
-          <div class="activities-block">
-            <img src="images/information-orientation-mobile.jpg" alt="" />
-            <div class="activities-txt">
+        <section class="activities-laptop">
+          <div class="activities-block-laptop">
+            <img src="images/information-orientation.jpg" alt="" />
+            <div class="activities-txt d-flex-column-center">
               <h3 class="darkgrey">Orientation date</h3>
               <p class="midgrey">Tue 10/11 &#38; Wed 10/12: 8am-3pm</p>
               <a href="#" class="blue">Read more</a>
             </div>
           </div>
-          <div class="activities-block">
-            <img src="images/information-campus-mobile.jpg" alt="" />
-            <div class="activities-txt">
+          <div class="activities-block-laptop">
+            <img src="images/information-campus.jpg" alt="" />
+            <div class="activities-txt d-flex-column-center">
               <h3 class="darkgrey">Our campus</h3>
               <p class="midgrey">Find which campus is close by you</p>
               <a href="#" class="blue">Read more</a>
             </div>
           </div>
-          <div class="activities-block">
-            <img src="images/information-guest-lecture-mobile.jpg" alt="" />
-            <div class="activities-txt">
-              <h3 class="darkgrey">Special guest lecture</h3>
-              <p class="midgrey">Join a keynote with Olivier Sack about music medical treatment</p>
+          <div class="activities-block-laptop bg-light">
+            <img src="images/information-guest-lecture.jpg" alt="" />
+            <div class="activities-txt d-flex-column-center">
+              <h3 class="darkgrey">Our guest lecture</h3>
+              <p class="midgrey">
+                Join a keynote with Olivier Sack about music medical treatment
+              </p>
               <a href="#" class="blue">Read more</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Start Learning section mobile -->
+
+    <section class="start-learning-mobile box">
+      <h2 class="darkgrey text-center">Start learning</h2>
+      <h3 class="bg-light darkgrey">Software engineering</h3>
+      <h3 class="bg-light darkgrey">Computer art</h3>
+      <h3 class="bg-light darkgrey">Design</h3>
+      <h3 class="bg-light darkgrey">Data</h3>
+      <h3 class="bg-light darkgrey">Business</h3>
+      <h3 class="bg-light darkgrey">Marketing</h3>
+    </section>
+
+    <!-- Start Learning section laptop -->
+
+    <div class="bg-light">
+      <div class="container">
+        <section class="start-learning-laptop">
+          <h2 class="darkgrey">Start Learning</h2>
+          <div class="container-cards">
+            <div class="card-block">
+              <img src="images/course-software.jpg" alt="" />
+              <div class="card-block-content">
+                <h3 class="darkgrey">Software engineering</h3>
+                <h4 class="courses grey">Courses</h4>
+                <p class="grey light">
+                  Web Development, Mobile Development, iOT, APIs
+                </p>
+              </div>
+            </div>
+            <div class="card-block">
+              <img src="images/course-computer-art.jpg" alt="" />
+              <div class="card-block-content">
+                <h3 class="darkgrey">Computer art</h3>
+                <h4 class="courses grey">Courses</h4>
+                <p class="grey light">
+                  Imaging &#38; Design, Web Design, Motion Graphics &#38; Visual
+                  Effects, Computer Animation
+                </p>
+              </div>
+            </div>
+            <div class="card-block">
+              <img src="images/course-design.jpg" alt="" />
+              <div class="card-block-content">
+                <h3 class="darkgrey">Design</h3>
+                <h4 class="courses grey">Courses</h4>
+                <p class="grey light">
+                  User Experience Design, User Research, Visual Design
+                </p>
+              </div>
+            </div>
+
+            <div class="card-block">
+              <img src="images/course-data.jpg" alt="" />
+              <div class="card-block-content">
+                <h3 class="darkgrey">Data</h3>
+                <h4 class="courses grey">Courses</h4>
+                <p class="grey light">
+                  Data Science, Big Data, SQL, Data Visualisation
+                </p>
+              </div>
+            </div>
+
+            <div class="card-block">
+              <img src="images/course-business.jpg" alt="" />
+              <div class="card-block-content">
+                <h3 class="darkgrey">Business</h3>
+                <h4 class="courses grey">Courses</h4>
+                <p class="grey light">
+                  Product Development, Business Development, Startup
+                </p>
+              </div>
+            </div>
+
+            <div class="card-block">
+              <img src="images/course-marketing.jpg" alt="" />
+              <div class="card-block-content">
+                <h3 class="darkgrey">Marketing</h3>
+                <h4 class="courses grey">Courses</h4>
+                <p class="grey light">
+                  Analytics, Content Marketing, Mobile Marketing
+                </p>
+              </div>
             </div>
           </div>
         </section>
