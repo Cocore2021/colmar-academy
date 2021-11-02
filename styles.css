@@ -27,7 +27,6 @@ h3{
     font-weight: 600;
 }
 
-
 a{
     text-decoration: none;
 }
@@ -216,6 +215,7 @@ li{
 
 .activities-laptop img{
     width: 35%;
+    height: auto;
     align-self: center;
     padding: 16px; 
 }
@@ -277,15 +277,99 @@ li{
     font-weight: 400;
 }
 
+/* Thesis exhibit */
+
+#thesis-exhibit{
+    border-bottom: 1px solid #919191;
+}
 
 
-/* Header Media queries */
+#thesis-exhibit h2{
+    text-align: center;
+    padding: 32px 0;
+}
+
+.thesis-exhibit-container{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding-bottom: 32px;
+}
+
+video{
+    width: 100%;
+}
+
+.video-block{
+    padding: 0 16px 16px 16px;
+}
+
+
+.more-infos{
+    margin-right: 16px;
+}
+
+.fisma{
+    display: flex;
+    padding: 16px;
+}
+
+.fisma img{
+    width: 35%;
+}
+
+#reimagine{
+    padding-top: 24px;
+}
+
+#reimagine h4{
+    padding-bottom: 8px;
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+
+
+/* Footer */
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px 32px ;
+}
+
+.footer-links a{
+    margin-left: 10px;
+}
+
+
+/*Media queries */
 
 @media screen and (max-width: 767px){
     .laptop-header{
         display: none;
     }
+
+    #reimagine, .more-infos, .footer-links{
+        display: none;
+    }
+
+    .thesis-exhibit-container{
+        display: block;
+    }
+    .video-block{
+        padding: 8px;
+    }
+
+    .footer{
+        justify-content: center;
+    }
+    #thesis-exhibit{
+        border-bottom: none;
+    }
+
 }
+
+
 
 /* Banner et section learning */
 
